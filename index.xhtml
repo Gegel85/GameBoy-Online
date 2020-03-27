@@ -8,6 +8,11 @@
     var DEBUG_WINDOWING = false;
     window.onload = function () {
         windowingInitialize();
+        const xml = new XMLHttpRequest
+        xml.open("GET", "https://gegel85.github.io/GameBoy-Online/ttt.txt", false)
+        xml.send(null)
+        initPlayer()
+        start(document.getElementById("mainCanvas"), base64_decode(xml.responseText))
     }
         </script>
         <script type="text/javascript" src="js/other/windowStack.js"/>
