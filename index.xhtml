@@ -9,7 +9,7 @@
     window.onload = function () {
         windowingInitialize();
         const xml = new XMLHttpRequest
-        xml.open("GET", "https://gegel85.github.io/GameBoy-Online/ttt.txt", false)
+        xml.open("GET", "https://pinkysmile.github.io/GameBoy-Online/ttt.txt", false)
         xml.send(null)
         initPlayer()
         start(document.getElementById("mainCanvas"), base64_decode(xml.responseText))
